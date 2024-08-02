@@ -1,4 +1,4 @@
-# Backend Notions - Node JS HTTP API
+Node JS HTTP API
 
 ![AllianceStarbird](assets/alliance-logo.png)
 
@@ -133,21 +133,3 @@ The response of the *Endor Battle Station* `/attack` endpoint should be a **JSON
 This will allow the probe droids to report back to the leaders managing them and keeping track of the usefulness of ion cannons in *Endor*.
 
 ---
-
-# Additional Considerations
-
-The attack module for the *Endor Battle Station* could be written in **any language** you prefer but it should be developed using a **docker environment** with docker-compose so that the local *Ewoks* can further test it and maintain it after you are gone.
-
-Moreover, our intelligence forces obtain new information and strategies every day, so it's fundamental that the generated code is easy maintainable and extensible. To do that, good practices and some **testing** should be applied.
-
-Because of the importance of the mission for the New Republic, we have provided an initial docker-compose with the simulated ion cannons along with several test cases that will at least verify that the algorithm works correctly.
-
-These tests are timed using the same request per second rate as the probe droids. If the response time is too slow, the battle station will not be able to destroy all targets in time.
-
-You should have `curl` installed and run the command `./tests.sh` in your machine.
-
-# Delivery
-
-After completing the mission, push your solution to this repository.
-
-Good luck, **may the Force be with you.**
